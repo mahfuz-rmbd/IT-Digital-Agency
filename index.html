@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ItDigitalAgency.bd — আপনার ডিজিটাল ব্যবসার বিশ্বস্ত পার্টনার</title>
+  <meta name="description" content="ItDigitalAgency.bd — ফেসবুক ই-কমার্স, ব্র্যান্ডিং, ডিজাইন, ভিডিও এডিটিং, SEO ও কন্টেন্ট ক্রিয়েশনে পেশাদার সেবা।" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon-192.png" sizes="192x192" />
+  <meta name="theme-color" content="#111827" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --accent: #22c55e;
+      --muted: #94a3b8;
+      --border: #1f2937;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    header, footer { border-bottom: 1px solid var(--border); }
+    .container { max-width: 1100px; margin: 0 auto; padding: 16px; }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      padding: 10px 0;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand img { width: 40px; height: 40px; border-radius: 8px; }
+    .brand h1 { font-size: 18px; margin: 0; }
+    .cta-group { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn {
+      padding: 10px 16px; border: 1px solid var(--border); border-radius: 10px; background: #0b1220;
+      color: var(--text); cursor: pointer; transition: 0.2s;
+    }
+    .btn.primary { background: var(--accent); color: #04110a; border-color: #16a34a; }
+    .btn:hover { transform: translateY(-1px); }
+    .hero {
+      display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px; align-items: center;
+      margin-top: 12px;
+    }
+    .hero-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px;
+    }
+    .hero-card h2 { margin: 0 0 8px 0; font-size: 24px; }
+    .hero-card p { color: var(--muted); margin: 0 0 12px 0; }
+    .hero-media {
+      position: relative; overflow: hidden; border-radius: 14px; border: 1px solid var(--border);
+    }
+    .hero-media img, .hero-media video { width: 100%; display: block; }
+    .section { margin-top: 18px; }
+    .section h3 { margin: 0 0 8px 0; font-size: 20px; }
+    .grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
+    }
+    .card img { width: 100%; height: 150px; object-fit: cover; display: block; }
+    .card .content { padding: 12px; }
+    .card .title { font-weight: 600; margin: 0 0 6px 0; }
+    .card .desc { color: var(--muted); font-size: 14px; margin: 0 0 8px 0; }
+    .badge { display: inline-block; font-size: 12px; padding: 4px 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); }
+    .testimonial {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    }
+    .quote { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px; }
+    blockquote { margin: 0; color: var(--muted); }
+    .order {
+      display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 16px;
+    }
+    .form-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+    input, textarea, select {
+      width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--border);
+      background: #0b1220; color: var(--text);
+    }
+    .summary { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px; }
+    .summary h4 { margin: 0 0 8px 0; }
+    .row { display: flex; justify-content: space-between; margin-bottom: 6px; color: var(--muted); }
+    footer { margin-top: 24px; }
+    .foot { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; padding: 16px 0; color: var(--muted); }
+    .social a { margin-right: 8px; }
+    @media (max-width: 900px) {
+      .hero, .order, .testimonial { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+      .cta-group { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/icon-192.png" alt="ItDigitalAgency.bd logo" />
+        <h1>ItDigitalAgency.bd</h1>
+      </div>
+      <div class="cta-group">
+        <a class="btn" href="https://web.facebook.com/ItDigitalAgency.bd" target="_blank" rel="noopener">ফেসবুক পেজ</a>
+        <a class="btn" href="#services">সার্ভিস</a>
+        <a class="btn" href="#order">অর্ডার</a>
+        <a class="btn primary" href="https://m.me/ItDigitalAgency.bd" target="_blank" rel="noopener">মেসেজ দিন</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h2>আপনার ব্র্যান্ড, আপনার গল্প — আমরা সেটিকে ভাইরাল করি</h2>
+        <p>ব্র্যান্ডিং, ডিজাইন, ভিডিও এডিটিং, SEO, কন্টেন্ট স্ট্র্যাটেজি—সব এক জায়গায়। ফেসবুক ই-কমার্স ও শর্ট ভিডিওতে বাস্তব ফলাফল।</p>
+        <div class="cta-group">
+          <a class="btn primary" href="#order">অর্ডার করতে ক্লিক করুন</a>
+          <a class="btn" href="https://web.facebook.com/ItDigitalAgency.bd" target="_blank" rel="noopener">আরও জানুন</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/hero.jpg" alt="Agency portfolio highlight" />
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <h3>আমাদের প্রধান সেবা</h3>
+      <p class="badge">JSON থেকে ডেটা লোড হয় — সহজে আপডেট করুন</p>
+      <div id="product-grid" class="grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section">
+      <h3>ক্লায়েন্টদের অভিজ্ঞতা</h3>
+      <div class="testimonial">
+        <div class="quote">
+          <blockquote>
+            “ItDigitalAgency.bd আমাদের ফেসবুক শপে ৩ সপ্তাহে ২x রিচ দিয়েছে, ভিডিওগুলো সত্যিই কনভার্ট করে!”
+          </blockquote>
+          <p>— সন্তুষ্ট ক্লায়েন্ট</p>
+        </div>
+        <div class="hero-media">
+          <img src="assets/testimonial.jpg" alt="Client testimonial visual" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="order">
+      <h3>অর্ডার ও যোগাযোগ</h3>
+      <div class="order">
+        <div class="form-card">
+          <form id="order-form">
+            <div class="form-row">
+              <div>
+                <label for="name">নাম</label>
+                <input id="name" name="name" placeholder="আপনার নাম" required />
+              </div>
+              <div>
+                <label for="phone">ফোন নম্বর</label>
+                <input id="phone" name="phone" placeholder="+8801XXXXXXXXX" required />
+              </div>
+            </div>
+            <label for="address">ঠিকানা</label>
+            <textarea id="address" name="address" rows="3" placeholder="ডেলিভারি/যোগাযোগের ঠিকানা"></textarea>
+
+            <label for="service">সার্ভিস সিলেক্ট করুন</label>
+            <select id="service" name="service" required></select>
+
+            <div class="cta-group" style="margin-top:10px;">
+              <button class="btn primary" type="submit">অর্ডার কনফার্ম</button>
+              <a class="btn" href="https://m.me/ItDigitalAgency.bd" target="_blank" rel="noopener">মেসেঞ্জারে কথা বলুন</a>
+            </div>
+          </form>
+        </div>
+        <div class="summary">
+          <h4>অর্ডার সামারি</h4>
+          <div class="row"><span>সার্ভিস</span><span id="sum-title">—</span></div>
+          <div class="row"><span>প্যাকেজ</span><span id="sum-tier">—</span></div>
+          <div class="row"><span>মূল্য</span><span id="sum-price">—</span></div>
+          <div class="row"><span>ডেলিভারি চার্জ</span><span>ফ্রি</span></div>
+          <hr style="border-color:var(--border);" />
+          <div class="row" style="font-weight:600;"><span>টোটাল</span><span id="sum-total">—</span></div>
+          <p style="color:var(--muted); margin-top:8px;">নোট: পেমেন্ট ও ডেলিভারি বিস্তারিত মেসেঞ্জারে কনফার্ম করা হবে।</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>
+        <strong>ItDigitalAgency.bd</strong>
+        <p class="muted">সাংস্কৃতিক ও স্পিরিচুয়াল রেজোন্যান্স সহ বাস্তবসম্মত ডিজিটাল কনটেন্ট।</p>
+      </div>
+      <div>
+        <strong>যোগাযোগ</strong>
+        <p>Dhaka, Bangladesh</p>
+        <p>Messenger: m.me/ItDigitalAgency.bd</p>
+      </div>
+      <div class="social">
+        <strong>Social</strong><br />
+        <a href="https://web.facebook.com/ItDigitalAgency.bd" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://m.me/ItDigitalAgency.bd" target="_blank" rel="noopener">Messenger</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Register Service Worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(console.error);
+      });
+    }
+
+    // Load App Config
+    let APP = { currency: "BDT", accent: "#22c55e", brand: "ItDigitalAgency.bd" };
+    fetch('app-config.json').then(r => r.json()).then(cfg => {
+      APP = { ...APP, ...cfg };
+      document.querySelector(':root').style.setProperty('--accent', APP.accent || '#22c55e');
+      document.title = APP.brand ? (APP.brand + ' — আপনার ডিজিটাল ব্যবসার বিশ্বস্ত পার্টনার') : document.title;
+    }).catch(() => {});
+
+    // Load Products/Services
+    const productGrid = document.getElementById('product-grid');
+    const serviceSelect = document.getElementById('service');
+
+    function formatBDT(x) {
+      try {
+        return new Intl.NumberFormat('bn-BD', { style: 'currency', currency: 'BDT', maximumFractionDigits: 0 }).format(x);
+      } catch (_) {
+        return x + ' টাকা';
+      }
+    }
+
+    fetch('products.json')
+      .then(r => r.json())
+      .then(items => {
+        // Build cards
+        productGrid.innerHTML = items.map(item => `
+          <article class="card">
+            <img src="${item.image}" alt="${item.title}" />
+            <div class="content">
+              <h4 class="title">${item.title}</h4>
+              <p class="desc">${item.description}</p>
+              <div class="row"><span>প্যাকেজ:</span><span>${item.tier}</span></div>
+              <div class="row"><span>মূল্য:</span><span>${formatBDT(item.price)}</span></div>
+              <div class="cta-group" style="margin-top:8px;">
+                <a class="btn" href="https://web.facebook.com/ItDigitalAgency.bd" target="_blank" rel="noopener">ডেমো দেখুন</a>
+                <button class="btn primary" onclick="selectService('${item.id}')">অর্ডার</button>
+              </div>
+            </div>
+          </article>
+        `).join('');
+
+        // Build select
+        serviceSelect.innerHTML = items.map(item =>
+          `<option value="${item.id}">${item.title} — ${item.tier} (${formatBDT(item.price)})</option>`
+        ).join('');
+
+        // Set default summary
+        if (items.length) updateSummary(items[0]);
+        window._PRODUCTS = items;
+      })
+      .catch(() => {
+        productGrid.innerHTML = '<p style="color:var(--muted)">সার্ভিস লোড করতে সমস্যা হচ্ছে। পরে চেষ্টা করুন।</p>';
+      });
+
+    function selectService(id) {
+      const item = (window._PRODUCTS || []).find(i => i.id === id);
+      if (item) {
+        serviceSelect.value = id;
+        updateSummary(item);
+        window.scrollTo({ top: document.getElementById('order').offsetTop - 10, behavior: 'smooth' });
+      }
+    }
+
+    function updateSummary(item) {
+      document.getElementById('sum-title').textContent = item.title;
+      document.getElementById('sum-tier').textContent = item.tier;
+      document.getElementById('sum-price').textContent = formatBDT(item.price);
+      document.getElementById('sum-total').textContent = formatBDT(item.price);
+    }
+
+    document.getElementById('service').addEventListener('change', (e) => {
+      const id = e.target.value;
+      const item = (window._PRODUCTS || []).find(i => i.id === id);
+      if (item) updateSummary(item);
+    });
+
+    // Handle Order Form (send to Messenger prefilled)
+    document.getElementById('order-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const address = document.getElementById('address').value.trim();
+      const id = document.getElementById('service').value;
+      const item = (window._PRODUCTS || []).find(i => i.id === id);
+
+      const msg =
+        `অর্ডার বিস্তারিত:\n` +
+        `নাম: ${name}\nফোন: ${phone}\nঠিকানা: ${address}\n` +
+        `সার্ভিস: ${item?.title} (${item?.tier})\nমোট: ${formatBDT(item?.price)}`;
+
+      const encoded = encodeURIComponent(msg);
+      const messenger = 'https://m.me/ItDigitalAgency.bd?ref=' + encoded;
+      window.open(messenger, '_blank');
+    });
+  </script>
+</body>
+</html>

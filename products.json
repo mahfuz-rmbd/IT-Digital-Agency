@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sv001",
+    "title": "ব্র্যান্ডিং ও ভিজ্যুয়াল আইডেন্টিটি",
+    "description": "লোগো, ব্যাজ, কালার সিস্টেম, টেমপ্লেট—আপনার ব্র্যান্ডকে স্মরণীয় করে তুলুন।",
+    "tier": "Starter",
+    "price": 2200,
+    "image": "assets/service-1.jpg"
+  },
+  {
+    "id": "sv002",
+    "title": "শর্ট ভিডিও / রিলস প্রোডাকশন",
+    "description": "স্ক্রিপ্টিং, স্টোরিবোর্ডিং, Flipaclip/Runway ML, SFX—ভাইরাল রিলস প্রস্তুত।",
+    "tier": "Growth",
+    "price": 3500,
+    "image": "assets/service-2.jpg"
+  },
+  {
+    "id": "sv003",
+    "title": "SEO ও কপি রাইটিং (বাংলা/English)",
+    "description": "বাইলিঙ্গুয়াল কন্টেন্ট, টাইটেল/ক্যাপশন অপটিমাইজেশন, রিচ ও কনভার্সন বৃদ্ধি।",
+    "tier": "Pro",
+    "price": 4200,
+    "image": "assets/service-3.jpg"
+  }
+]
